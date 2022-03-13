@@ -1,5 +1,129 @@
 /* GLOBAL-STYLES  */
 body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100%;
   font-family: "Bebas Neue", "Roboto", "Times New Roman", cursive;
-  font-family: "Roboto Condensed", "Roboto", "Times New Roman", sans-serif;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*:focus {
+  outline: dotted 2px #1E90FF;
+}
+
+/* CONTAINER  */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+/* SITE-LEFT-BACKGROUND-IMAGE  */
+.site-left {
+  display: flex;
+  width: 50%;
+  height: 782px;
+  background-image: url(../img/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-left {
+    background-image: url(../img/background-img@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+
+
+/* MAIN-CONTENT  */
+.main-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.site-left-heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Bebas Neue" "Roboto", "Times New Roman",cursive;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.site-left-wrapper {
+  padding-top: 326px;
+  padding-bottom: 326px;
+  padding-left: 158px;
+  padding-right: 157px;
+}
+
+.site-button {
+  background-color: rgba(30, 144, 255, 1);
+  border: none;
+  padding: 14.5px 24px;
+  transition: background-color 0.4s ease;
+}
+
+.site-button:hover {
+  background: rgba(30, 144, 255, 0.8);
+}
+
+.site-button:active {
+  background: rgba(30, 144, 255, 0.6);
+}
+
+.button-items {
+  display: flex;
+  align-items: center;
+}
+
+.button-text {
+  color: #fff;
+  font-family: "Bebas Neue" "Roboto", "Times New Roman" cursive;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin-left: 12px;
+}
+
+.button-icon {
+  width: 20px;
+  height: 19px;
+  object-fit: cover;
 }
