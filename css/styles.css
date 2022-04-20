@@ -34,6 +34,7 @@ img {
 
 *:focus {
   outline: dotted 2px #1E90FF;
+  outline-offset: 3px;
 }
 
 /* CONTAINER  */
